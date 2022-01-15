@@ -1,0 +1,648 @@
+<!-- CREATOR: ANDJELA LEVKIC -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.container{
+  position: relative;
+  width: 1200px;
+  height: 300px;
+  margin: 240px auto;
+ 
+}
+.container .box{
+  position: relative;
+  width: calc(400px - 30px);
+  height: calc(300px - 30px);
+  background: #000;
+  float: left;
+  margin: 15px;
+  box-sizing: border-box;
+  overflow: hidden;
+  border-radius: 10px;
+
+}
+
+.container .box .icon{
+  position: absolute;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 100%;
+  background:  rgb(163, 221, 245);
+  transition: 0.5s;
+  z-index: 1;
+  
+  
+}
+.container .box:hover .icon{
+  top: 20px;
+  left: calc(50% - 40px);
+  width: 80px;
+  height: 80px;
+  border-radius: 50px;
+}
+.container .box .icon .fa{
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 80px;
+  transition: 0.5s;
+  color: #fff;
+}
+.container .box:hover .icon .fa{
+  font-size: 40px;
+ 
+
+}
+.container .box .content{
+  position: absolute;
+  top: 100%;
+  height: calc(100px - 100px);
+  text-align: center;
+  padding: 20px;
+  box-sizing: content-box;
+  transition: 0.5s;
+  opacity: 1;
+}
+.container .box:hover .content{
+  top: 60px;
+}
+.container .box .content h3{
+  margin:  10;
+  text-align: center;
+  padding: 0;
+  color: #fff;
+  font-size: 24px;
+  
+}
+.container .box .content p{
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+.container .box .content1{
+  position: absolute;
+  top: 100%;
+  height: calc(100px - 100px);
+  text-align: center;
+  padding: 20px;
+  box-sizing: content-box;
+  transition: 0.5s;
+  opacity: 1;
+}
+.container .box .icons{
+  position: absolute;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 100%;
+  background:  rgb(163, 221, 245);
+  transition: 0.5s;
+  z-index: 1;
+}
+.container .box:hover .icons{
+  top: 20px;
+  left: calc(50% - 40px);
+  width: 80px;
+  height: 80px;
+  border-radius: 50px;
+}
+.container .box .icons .fa{
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 80px;
+  transition: 0.5s;
+  color: #fff;
+}
+.container .box:hover .icons .fa{
+  font-size: 40px;
+ 
+
+}
+.container .box .content1{
+  position: absolute;
+  top: 100%;
+  height: calc(100px - 100px);
+  text-align: center;
+  padding: 20px;
+  box-sizing: content-box;
+  transition: 0.5s;
+  opacity: 1;
+}
+.container .box:hover .content1{
+  top: 60px;
+}
+.container .box .content1 h3{
+  margin:  10;
+  text-align: center;
+  padding: 0;
+  color: #fff;
+  font-size: 24px;
+  
+}
+.container .box .content1 p{
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  width: 200px;
+}
+.container .box .content2{
+  position: absolute;
+  top: 100%;
+  height: calc(100px - 100px);
+  text-align: center;
+  padding: 20px;
+  box-sizing: content-box;
+  transition: 0.5s;
+  opacity: 1;
+}
+.container .box .icona{
+  position: absolute;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 100%;
+  background:  rgb(163, 221, 245);
+  transition: 0.5s;
+  z-index: 1;
+}
+.container .box:hover .icona{
+  top: 20px;
+  left: calc(50% - 40px);
+  width: 80px;
+  height: 80px;
+  border-radius: 50px;
+}
+.container .box .icona .fa{
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 80px;
+  transition: 0.5s;
+  color: #fff;
+}
+.container .box:hover .icona .fa{
+  font-size: 40px;
+ 
+
+}
+.container .box .content2{
+  position: absolute;
+  top: 100%;
+  height: calc(100px - 100px);
+  text-align: center;
+  padding: 20px;
+  box-sizing: content-box;
+  transition: 0.5s;
+  opacity: 1;
+}
+.container .box:hover .content2{
+  top: 60px;
+}
+.container .box .content2 h3{
+  margin:  10;
+  text-align: center;
+  padding: 0;
+  color: #fff;
+  font-size: 24px;
+  
+}
+.container .box .content2 p{
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  width: 200px;
+}
+.container .box .content3{
+  position: absolute;
+  top: 100%;
+  height: calc(100px - 100px);
+  text-align: center;
+  padding: 20px;
+  box-sizing: content-box;
+  transition: 0.5s;
+  opacity: 1;
+}
+.container .box .iconb{
+  position: absolute;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 100%;
+  background:  rgb(163, 221, 245);
+  transition: 0.5s;
+  z-index: 1;
+}
+.container .box:hover .iconb{
+  top: 20px;
+  left: calc(50% - 40px);
+  width: 80px;
+  height: 80px;
+  border-radius: 50px;
+}
+.container .box .iconb .fa{
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 80px;
+  transition: 0.5s;
+  color: #fff;
+}
+.container .box:hover .iconb .fa{
+  font-size: 40px;
+ 
+
+}
+.container .box .content3{
+  position: absolute;
+  top: 100%;
+  height: calc(100px - 100px);
+  text-align: center;
+  padding: 20px;
+  box-sizing: content-box;
+  transition: 0.5s;
+  opacity: 1;
+}
+.container .box:hover .content3{
+  top: 60px;
+}
+.container .box .content3 h3{
+  margin:  10;
+  text-align: center;
+  padding: 0;
+  color: #fff;
+  font-size: 24px;
+  
+}
+.container .box .content3 p{
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  width: 200px;
+}
+.container .box .content4{
+  position: absolute;
+  top: 100%;
+  height: calc(100px - 100px);
+  text-align: center;
+  padding: 20px;
+  box-sizing: content-box;
+  transition: 0.5s;
+  opacity: 1;
+}
+.container .box .iconc{
+  position: absolute;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 100%;
+  background:  rgb(163, 221, 245);
+  transition: 0.5s;
+  z-index: 1;
+}
+.container .box:hover .iconc{
+  top: 20px;
+  left: calc(50% - 40px);
+  width: 80px;
+  height: 80px;
+  border-radius: 50px;
+}
+.container .box .iconc .fa{
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 80px;
+  transition: 0.5s;
+  color: #fff;
+}
+.container .box:hover .iconc .fa{
+  font-size: 40px;
+ 
+
+}
+.container .box .content4{
+  position: absolute;
+  top: 100%;
+  height: calc(100px - 100px);
+  text-align: center;
+  padding: 20px;
+  box-sizing: content-box;
+  transition: 0.5s;
+  opacity: 1;
+}
+.container .box:hover .content4{
+  top: 60px;
+}
+.container .box .content4 h3{
+  margin:  10;
+  text-align: center;
+  padding: 0;
+  color: #fff;
+  font-size: 24px;
+  
+}
+.container .box .content4 p{
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  width: 200px;
+  
+}
+.bi-chat-dots-fill{
+  position: absolute;
+  left: 20%;
+  top: 20%;
+}
+.bi-reception-4{
+  position: absolute;
+  left: 20%;
+  top: 20%;
+}
+.bi-apple{
+  position: absolute;
+  left: 20%;
+  top: 20%;
+}
+.bi-meta{
+  position: absolute;
+  left: 20%;
+  top: 20%;
+}
+.bi-hdd-network-fill{
+  position: absolute;
+  left: 20%;
+  top: 20%;
+}
+.virt{
+  position: absolute;
+  top: 80px;
+  left: 300px;
+  font-size: 45px;
+  text-align: center;
+  padding: 0;
+  color: rgb(255, 255, 255);
+  opacity: 30;
+
+
+  
+}
+.imggg{
+  position: absolute; 
+  top: 70px;
+  left: 10px;
+  border: solid black;
+  opacity: 50;
+}
+.ims{
+  position: absolute;
+  top: 70px;
+  right: 10px;
+  border: solid black;
+  opacity: 50;
+}
+.limk{
+  position: absolute;
+  font-family: Prototype ;
+  top: 200px;
+  left: 400px;
+  font-size: 20px;
+  text-align: center;
+  padding: 10px;
+  color: rgb(255, 255, 255);
+  border: solid rgb(10, 245, 245);
+ 
+}
+
+body{
+        background: linear-gradient(to top right, #59809b 0%, #e4c5d4 100%);
+      }
+.sss{
+  width: 100%;
+  height: 300px;
+  background-image: url(../images/skyA.jpg);
+}
+.part{
+  position:absolute;
+  left: 200px;
+  top: 420px;
+  padding: 10px;
+  color:  #2e2e3a;
+  text-align: center;
+  font-size: 25px;
+  font-family: "nasalization-rg", serif;
+  background-color: #59809b9a ;
+  border: solid rgb(10, 245, 245);
+  
+}
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: rgb(5, 5, 5); /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" type="image/x-icon" href="../other/Logo/Logo.png">
+    <link rel="stylesheet" href="../other/style.css">
+    <title>Tech of the Future</title>
+    
+</head>
+<body>
+    <nav>
+      <div data-text="TECH OF THE FUTURE" class="logo">
+        <h4><a href=../index.html>Tech of the Future</a></h4>
+      </div>
+    
+      <ul class="nav-links">
+        <li>
+          <a href="AI.html">AI</a>
+          <div class="sub-menu-1">
+            <ul>
+              <li><a href="vr.html">Virtual Reality</a></li>
+              <li><a href="neuralink.html">Neuralink</a></li>
+              <li><a href="gaming.html">Gaming</a></li>
+              <li><a href="shopping.html">Shopping</a></li>
+            </ul>
+          </div>
+    
+    
+        </li>
+        <li>
+          <a href="colonisation.html">Colonisation</a>
+          <div class="sub-menu-1">
+            <ul>
+              <li><a href="spacex.html">Space X</a></li>
+              <li><a href="lifeinmars.html">Life in Mars</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav-cells">
+          <a href="tourism.html">Tourism</a>
+          <div class="sub-menu-1">
+            <ul>
+              <li><a href="t-general.html">General Knowledge</a></li>
+              <li><a href="t-blueorigin.html">Blue Origin</a></li>
+              <li><a href="t-worldsfirsthotel.html">World's First Hotel</a></li>
+              <li><a href="t-spacetourismnowvsfuture.html">Space Tourism Now vs Future</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="transportation.html">Transportation</a>
+          <div class="sub-menu-1">
+            <ul>
+              <li><a href="futureSpace.html">Future Space</a></li>
+              <li><a href="futureTraffic.html">Future Traffic</a></li>
+              <li><a href="futureVehicles.html">Future Vehicles</a></li>
+              <li><a href="futureEarth.html">Future Earth</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="#">Communication</a>
+          <div class="sub-menu-1">
+            <ul>
+              <li><a href="">Space Hotels </a></li>
+              <li><a href="">idk</a></li>
+              <li><a href="">idk</a></li>
+              <li><a href="">idk</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    
+      <!-- ? The Nav Bar-->
+      <!-- ? Burger only on mobile mode-->
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </nav>
+    
+    <div class="sss">
+    <div class="virt">
+    <h1>Virtual Communication</h1>
+    </div>
+    <div class="limk" > <h3> Virtual Communication is a mode of communication that includes the use of
+    <br> technology!</h3></div>
+      </div>
+      <div class="part"><h2>Here you can learn more about these 5 models of virtual communication!</h2></div>
+        <div class="container">
+          
+          <div class="box">
+            <div class="icons">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-reception-4" viewBox="0 0 16 16">
+  <path d="M0 11.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-2zm4-3a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-5zm4-3a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-8zm4-3a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v11a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-11z"/>
+</svg>
+              <div class="content1">
+                <h3>5G</h3>
+                <a href="fiveG.html"><p>By reducing data rates, performance, and mobility, 5G is projected to connect almost all embedded sensors. 
+                  This results in an extremely compact and cost-effective connection..</p></a>
+              </div>
+              </div>
+          </div>
+          <div class="box">
+            <div class="icona">
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-apple" viewBox="0 0 16 16">
+                <path d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282z"/>
+                <path d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282z"/>
+              </svg>
+              <div class="content2">
+                <h3>Smartphones</h3>
+                <a href="smartphones.html"><p>A smartphone is a phone that can do more than just make and receive phone calls and text messages.
+                  Smartphones are computer-like in that they can surf the internet and run software programs. </p></a>
+                  </div>
+              </div>
+          </div>
+          <div class="box">
+            <div class="iconb">
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-meta" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M8.217 5.243C9.145 3.988 10.171 3 11.483 3 13.96 3 16 6.153 16.001 9.907c0 2.29-.986 3.725-2.757 3.725-1.543 0-2.395-.866-3.924-3.424l-.667-1.123-.118-.197a54.944 54.944 0 0 0-.53-.877l-1.178 2.08c-1.673 2.925-2.615 3.541-3.923 3.541C1.086 13.632 0 12.217 0 9.973 0 6.388 1.995 3 4.598 3c.319 0 .625.039.924.122.31.086.611.22.913.407.577.359 1.154.915 1.782 1.714Zm1.516 2.224c-.252-.41-.494-.787-.727-1.133L9 6.326c.845-1.305 1.543-1.954 2.372-1.954 1.723 0 3.102 2.537 3.102 5.653 0 1.188-.39 1.877-1.195 1.877-.773 0-1.142-.51-2.61-2.87l-.937-1.565ZM4.846 4.756c.725.1 1.385.634 2.34 2.001A212.13 212.13 0 0 0 5.551 9.3c-1.357 2.126-1.826 2.603-2.581 2.603-.777 0-1.24-.682-1.24-1.9 0-2.602 1.298-5.264 2.846-5.264.091 0 .181.006.27.018Z"/>
+              </svg>
+              <div class="content3">
+                <h3>Meta</h3>
+                <a href="meta.html"><p>The metaverse is the next step in the growth of social networking.
+                  Because the company's mission is to assist bring the metaverse to life, we're altering our name to reflect that dedication.</p></a>
+
+              </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="iconc">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-hdd-network-fill" viewBox="0 0 16 16">
+              <path d="M2 2a2 2 0 0 0-2 2v1a2 2 0 0 0 2 2h5.5v3A1.5 1.5 0 0 0 6 11.5H.5a.5.5 0 0 0 0 1H6A1.5 1.5 0 0 0 7.5 14h1a1.5 1.5 0 0 0 1.5-1.5h5.5a.5.5 0 0 0 0-1H10A1.5 1.5 0 0 0 8.5 10V7H14a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2zm.5 3a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1zm2 0a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1z"/>
+            </svg>
+            <div class="content4">
+              <h3>M2M</h3>
+              <a href="machinetomachine.html"><p>M2M stands for machine-to-machine and refers to
+                any technology that allows networked devices to share data and conduct operations without the need for human interaction.</p></a>
+
+            </div>
+  
+        </div>
+      </div>
+      <button onclick="topFunction()" id="myBtn" title="Go to top">Go to the top</button>
+      
+      <div class="main_footer">
+        <a href="../students/student4.html"><button class="worked_by_student">Andjela Levkic</button></a>
+      </div>
+
+      <script src="../other/main.js"></script>
+<!-- Get the button: -->
+<script>
+  mybutton = document.getElementById("myBtn");
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+</script>
+</body>
+</html>

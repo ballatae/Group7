@@ -1,3 +1,5 @@
+
+// ?nav bar animation
 const navSlide = () => {
     const burger = document.querySelector('.burger');
     const nav = document.querySelector('.nav-links');
@@ -24,19 +26,14 @@ const navSlide = () => {
 
 navSlide();
 
+// ? welcome text animation
 var welcomeText = document.getElementById("openingText");
 // ? welcome text animation
 var scrollFunction = function () {
     const scrolled = window.scrollY;
     welcomeText.style.opacity = 1 + scrolled / -200
 
-    // console.log(scrolled);
     
-    // if (scrolled > 50) {
-    //     welcomeText.style.opacity = 0;
-    // } else {
-    //     welcomeText.style.opacity = 100;
-    // }
 }
 
 window.addEventListener('scroll', (scrollFunction)); // ?the event to remove the welcome text
@@ -49,3 +46,5 @@ const card = document.querySelector(".card__inner");
         card.classList.toggle('is-flipped');
     });
     
+
+

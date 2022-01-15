@@ -3,12 +3,41 @@
   padding: 0px;
   box-sizing: border-box;
 } /* *fit all the web*/
-
+/* background color used in most of the pages */
 body {
   background: linear-gradient(to top right, #59809b 0%, #ff99cc 100%);
   background-repeat: no-repeat;
 } /* ? body background */
 
+/* ! scrollbar animation start*/
+::-webkit-scrollbar {
+  width: 0.8em;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #64b1e7;
+  border-radius: 100vw;
+  margin-block: 0.2em;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #a02aa0;
+  border-radius: 100vw;
+  border: 0.1em solid #64b1e7;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #781078;
+  border-radius: 150vw;
+}
+/*! scrollbar animation end*/
+/* !------------------------------//////
+!---------------------------------//////
+!-------------NAV BAR-------------//////
+!---------------------------------//////
+!---------------------------------//////
+!---------------------------------/// */
+/* nav bar position diplayed at the top of the page and also being responsive */
 nav {
   position: fixed;
   top: 0%;
@@ -22,11 +51,15 @@ nav {
   font-family: "Nasalization Regular", sans-serif;
   z-index: 1;
 } /* *nav-bar style */
+
+/* the title of the wesite link properties  */
 .logo a {
   text-decoration: none;
   color: #2e2e3a;
   text-transform: uppercase;
 }
+
+/* the title properties */
 .logo {
   color: #2e2e3a;
   text-transform: uppercase;
@@ -34,10 +67,12 @@ nav {
   font-size: 20px;
 } /* * tech of the future on pc/ logo on moblie*/
 
+/* c */
 .logo a {
   transition: 0.5s;
 }
 
+/* when we hover over the title */
 .logo a:hover {
   color: #c9aca6;
   cursor: pointer;
@@ -45,6 +80,7 @@ nav {
   font-size: 110%;
 } /* * logo hover effect*/
 
+/* nav links properties */
 .nav-links {
   display: flex;
   justify-content: space-around;
@@ -52,10 +88,12 @@ nav {
   z-index: +1;
 }
 
+/* li properties so we will remove the dot in the front  */
 .nav-links li {
   list-style: none;
 }
 
+/* removing the link properties and making it look like the title   */
 .nav-links a {
   color: #2e2e3a;
   text-decoration: none;
@@ -63,21 +101,26 @@ nav {
   font-weight: bold;
   font-size: 14px;
 }
+
+/* transition used for a smoother hover effect */
 .nav-links a {
   transition: 0.7s;
 }
 
+/* when we hover over the links on the nav-bar */
 .nav-links a:hover {
   color: #c9aca6;
   cursor: pointer;
   text-shadow: 2px 2px 5px #5b1f5b;
   font-size: 130%;
 }
+
 /* * drop-down menu*/
 .sub-menu-1 {
   display: none;
 }
 
+/* when we hover the sub-menu will be displayed */
 .nav-links li:hover .sub-menu-1 {
   display: block;
   position: absolute;
@@ -87,10 +130,13 @@ nav {
   border-bottom-right-radius: 10px;
   z-index: +1;
 }
+/* properties for moving it to the better looking place under the nav bar */
 .nav-links li:hover .sub-menu-1 ul {
   display: block;
   margin: 10px;
 }
+
+/* when we hover the links the effects and style-properties */
 .nav-links li:hover .sub-menu-1 ul li {
   width: 100px;
   padding: 10px;
@@ -102,20 +148,25 @@ nav {
   font-size: 11.5px;
 }
 
+/* so the last child won't have a line under it  */
 .nav-links li:hover .sub-menu-1 ul li:last-child {
   border-bottom: none;
 }
 
+/* so the text will be increased a little bit less than the main pages/ 
+since they are sub-pages */
 .sub-menu-1 ul li:hover {
   font-size: 12px;
 }
 /* * till here*/
 
+/* for mobile and tablet use */
 .burger {
   display: none;
   cursor: pointer;
 }
 
+/* when we pres what size will it contain in the page and the transition */
 .burger div {
   width: 25px;
   height: 3px;
@@ -124,12 +175,15 @@ nav {
   transition: all 00.3s ease;
 }
 
+/*  nav links style will give it a 60% so the burger nav bar will be hidden  */
 @media screen and (max-width: 1024px) {
   .nav-links {
     width: 60%;
   }
 }
 
+/* whe the max width of the screen is less 
+than 768px  the burger form will be displayed */
 @media screen and (max-width: 768px) {
   body {
     overflow-x: hidden; /* ? so we won't se the side-nav-bar */
@@ -161,11 +215,12 @@ nav {
     display: none;
   }
 }
-
+/* we use the property in js so it will be  displayed in the page when clicked*/
 .nav-active {
   transform: translateX(0%);
 }
 
+/* link fade for the pages being displayed */
 @keyframes navLinkFade {
   from {
     opacity: 0;
@@ -177,6 +232,7 @@ nav {
   }
 }
 
+/* when we click the three lines will be transformed in button X */
 .toggle .line1 {
   transform: rotate(-45deg) translate(-5px, 6px);
 }
@@ -188,7 +244,14 @@ nav {
 .toggle .line3 {
   transform: rotate(45deg) translate(-5px, -6px);
 }
+/* !
+!-------------------------------------
+!-------------------------------------
+!    MAIN PAGE STYLE
+!-------------------------------------
+!------------------------------------- */
 
+/* opening text properties */
 .openingText {
   width: 500px;
   margin: 270px auto;
@@ -198,19 +261,32 @@ nav {
   font-size: 300%;
   text-align: center;
   cursor: context-menu;
-  transition-property: color;
 }
 
+/* opening text animation */
 .openingText span {
-  transition: 0.5s;
+  transition: 4s;
+  animation: opening-text 1s infinite;
+  /* animation-name: opening-text;
+  animation-duration: 1s; */
 }
 
-.openingText:hover {
-  color: #59809b;
-  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff, 0 0 80px #fff,
-    0 0 120px #fff;
+/* the shadow animation at the opening text */
+@keyframes opening-text {
+  0% {
+    text-shadow: none;
+  }
+  50% {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff, 0 0 80px #fff,
+      0 0 120px #fff;
+  }
+  100% {
+    text-shadow: none;
+  }
 }
 
+/* content so it will apear like a glass where all 
+the content off the main page will be displayed */
 .content {
   background-color: #ffffff10;
   backdrop-filter: blur(1px);
@@ -218,6 +294,7 @@ nav {
   z-index: -1;
 }
 
+/* content position in the page */
 .content {
   margin-top: 350px;
   margin-left: 100px;
@@ -226,19 +303,21 @@ nav {
   border-radius: 15px;
 }
 
+/* all the paragraphs in the content */
 .content p {
   padding: 2%;
   color: #2e2e3a;
   font-family: "nasalization", sans-serif;
-  font-size: 20px;
 }
 
+/* all the sub pages diplayed inside another container inside the content */
 .mainimages {
   padding-top: 15px;
   padding-left: 2em;
   padding-bottom: 15px;
 }
 
+/* each main subpage having a separate background */
 .mainimages .box {
   background-color: rgba(46, 46, 58, 0.4);
   margin-right: 2em;
@@ -247,13 +326,15 @@ nav {
   margin-bottom: 4em;
 }
 
+/* the images styles */
 .mainimages .box img {
   margin-left: 10px;
   margin-top: 10px;
   border-radius: 10px;
 }
 
-.mainimages .aih3 {
+/* the links that are over the images properties */
+.mainimages .aih3 a {
   position: absolute;
   padding-left: 2em;
   padding-right: 2em;
@@ -270,9 +351,11 @@ nav {
   font-size: 25px;
   justify-content: space-around;
   line-height: 5%;
+  text-decoration: none;
 }
 
-.mainimages .communicationh3 {
+/* comunication link position and style */
+.mainimages .communicationh3 a {
   position: absolute;
   padding-left: 1em;
   padding-right: 1em;
@@ -289,9 +372,11 @@ nav {
   font-size: 25px;
   justify-content: space-around;
   line-height: 5%;
+  text-decoration: none;
 }
 
-.mainimages .transporth3 {
+/*comunication link position and style*/
+.mainimages .transporth3 a {
   position: absolute;
   padding-left: 0.4em;
   padding-right: 1em;
@@ -308,9 +393,12 @@ nav {
   font-size: 25px;
   justify-content: space-around;
   line-height: 5%;
+  text-decoration: none;
 }
-.mainimages .tourh3,
-.colh3 {
+
+/* tourism and colonisation style since we need the same for both */
+.mainimages .tourh3 a,
+.colh3 a {
   position: absolute;
   margin-left: 1em;
   padding-left: 1em;
@@ -329,6 +417,7 @@ nav {
   font-size: 25px;
   justify-content: space-around;
   line-height: 5%;
+  text-decoration: none;
 }
 /*! edited text 1.3.5*/
 .mainimages .aicontainer {
@@ -338,13 +427,15 @@ nav {
   left: 19em;
 }
 
+/* communication container properties of the text */
 .mainimages .comcontainer {
-  width: 900px;
+  width: 70%;
   position: absolute;
   top: 56em;
   left: 20em;
 }
 
+/* transport container properties of the text*/
 .mainimages .trancontainer {
   width: 900px;
   position: absolute;
@@ -352,18 +443,159 @@ nav {
   left: 20em;
 }
 
-@media screen and (max-width: 1450px) {
-  .mainimages .aicontainer,
-  .comcontainer,
-  .trancontainer,
-  .colocontainer,
-  .tourcontainer {
+/* animation of the titles inside the images*/
+
+.aih3 a,
+.colh3 a,
+.communicationh3 a,
+.tourh3 a,
+.transporth3 a {
+  animation: h3-colorchange 3s infinite;
+}
+/*animation property*/
+@keyframes h3-colorchange {
+  0% {
+    color: #c9aca6;
+  }
+  50% {
+    color: #3d6a88;
+  }
+  100% {
+    color: #c9aca6;
+  }
+}
+/* box animations*/
+.box {
+  animation: main-box 3s infinite;
+}
+
+/* box animation properties*/
+@keyframes main-box {
+  0% {
+    background-color: rgba(46, 46, 58, 0.4);
+  }
+
+  50% {
+    background-color: #3d6a88;
+  }
+
+  100% {
+    background-color: rgba(46, 46, 58, 0.4);
+  }
+}
+
+/* remove the text of the sub pages so the will se only the pictures */
+@media screen and (max-width: 1200px) {
+  .content .box p {
     display: none;
   }
 }
 
+/* ball animation */
+
+.main-ball {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.main-ball {
+  position: fixed;
+  top: 75px;
+  left: 15px;
+  background-color: #154160;
+  animation: ballmovement 20s infinite;
+  animation-direction: alternate;
+}
+/* animation for the ball to move through the page */
+@keyframes ballmovement {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateY(3150%);
+    background-color: #5b1f5b;
+  }
+  50% {
+    transform: translateX(7400%) translateY(3150%);
+    background-color: #154160;
+  }
+  75% {
+    transform: translateX(7400%);
+    background-color: #5b1f5b;
+  }
+  100% {
+    transform: translateX(0);
+    background-color: #154160;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  @keyframes ballmovement {
+    0% {
+      transform: translateX(0);
+    }
+    25% {
+      transform: translateY(3150%);
+      background-color: #5b1f5b;
+    }
+    50% {
+      transform: translateX(2400%) translateY(3150%);
+      background-color: #154160;
+    }
+    75% {
+      transform: translateX(2400%);
+      background-color: #5b1f5b;
+    }
+    100% {
+      transform: translateX(0);
+      background-color: #154160;
+    }
+  }
+}
+/* ball animation */
+
+/* !
+?-----------------------------
+!-----------------------------
+!       BUTTON THAT WILL BRING AT THE TOP OF THE PAGE
+!-------------------------------
+?-------------------------------
+! */
+/* ? style of the rocked button that will return to the top of the page*/
+.back_button {
+  position: fixed;
+  bottom: 55px;
+  right: 10px;
+  transition: 0.8s;
+}
+
+.back_button img {
+  width: 50px;
+  height: 60px;
+  opacity: 0.4;
+  transition: 0.8s;
+}
+
+.back_button img:hover {
+  opacity: 1;
+}
+/* !
+!-------------------------------------
+!-------------------------------------
+!BACK BUTTON OVER
+!-------------------------------------
+!------------------------------------- */
+
+/* !
+!-------------------------------------
+!-------------------------------------
+!STUDENT CARDS
+!-------------------------------------
+!------------------------------------- */
 /* ? style of the students cards where each sstudent will have its own unique card */
 
+/* card style and position */
 .card {
   margin: 100px auto 0;
   width: 350px;
@@ -372,6 +604,7 @@ nav {
   margin-bottom: 90px;
 }
 
+/* inside the card style */
 .card__inner {
   width: 100%;
   height: 100%;
@@ -381,10 +614,12 @@ nav {
   position: relative;
 }
 
+/* when we want to flip the card the rotate effect */
 .card__inner.is-flipped {
   transform: rotateY(180deg);
 }
 
+/* style of the card face both fron and the back  */
 .card__face {
   position: absolute;
   width: 100%;
@@ -396,6 +631,7 @@ nav {
   box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
 }
 
+/* fron face of the card where only the role of the student is told */
 .card__face--front {
   background-image: linear-gradient(to bottom right, #154160, #fe4880);
   display: flex;
@@ -403,26 +639,31 @@ nav {
   justify-content: center;
 }
 
+/* student role text properties */
 .card__face--front h2 {
   color: #fff;
   font-size: 32px;
 }
 
+/* style of the back face of the card */
 .card__face--back {
   background-color: var(#154160);
   transform: rotateY(180deg);
 }
 
+/* the content that the back of the card will have //// style */
 .card__content {
   width: 100%;
   height: 100%;
 }
 
+/* card header the image of the developer and the name */
 .card__header {
   position: relative;
   padding: 30px 30px 40px;
 }
 
+/* after properties when we flip the card after the action is done */
 .card__header:after {
   content: "";
   display: block;
@@ -436,6 +677,7 @@ nav {
   border-radius: 0px 0px 50% 0px;
 }
 
+/* image style */
 .pp {
   display: block;
   width: 128px;
@@ -447,6 +689,7 @@ nav {
   object-fit: cover;
 }
 
+/* the name of the student properties */
 .card__header h2 {
   color: #fff;
   font-size: 25px;
@@ -457,10 +700,12 @@ nav {
   text-align: center;
 }
 
+/* the text and the topic of the developer */
 .card__body {
   padding: 30px;
 }
 
+/* the title of wich topic the developer worked on */
 .card__body h3 {
   color: #212121;
   font-size: 24px;
@@ -468,13 +713,20 @@ nav {
   margin-bottom: 15px;
 }
 
+/* the text about the developer */
 .card__body p {
   color: #212121;
   font-size: 18px;
   line-height: 1.4;
 }
-
+/* !
+!-------------------------------------
+!-------------------------------------
+!FOOTER OF THE STUDENTS ALSO IUSED INT THE OTHER PAGES
+!-------------------------------------
+!------------------------------------- *
 /* ? footer for the students cards*/
+/* size and the look */
 .student_cards_footer {
   width: 100%;
   height: 3.5em;
@@ -482,6 +734,7 @@ nav {
   font-family: "prototype", sans-serif;
 }
 
+/* display so it will be responsive */
 .student_cards_footer {
   display: flex;
   flex-direction: row;
@@ -489,6 +742,7 @@ nav {
   align-items: center;
 }
 
+/* the button styles */
 .student_cards_footer .student_link_btn {
   padding: 7px;
   border-radius: 5px;
@@ -500,6 +754,8 @@ nav {
   cursor: pointer;
 }
 
+/* the one student that is appeared in the screen its name 
+will be with the active properties */
 .active-student-card {
   padding: 10px;
   border-radius: 7px;
@@ -509,21 +765,26 @@ nav {
   color: #2e2e3a;
   background-color: #59809b;
 }
+
+/* text in the link/button srtyles  */
 .student_link_btn {
   text-decoration: none;
   color: #c9aca6;
   font-family: "prototype", sans-serif;
 }
 
+/* the transitions for a smoother hover effect */
 .student_cards_footer,
 .student_link_btn {
   transition: 0.5s;
 }
 
+/* when we hover oveer the footer */
 .student_cards_footer:hover {
   box-shadow: 0 0 10px #c9aca6;
 }
 
+/* when we hover over a button */
 .student_link_btn:hover {
   padding: 13px;
   box-shadow: 0 0 5px #c9aca6, 0 0 5px #c9aca6, 0 0 5px #c9aca6, 0 0 5px #c9aca6,
@@ -532,9 +793,6 @@ nav {
   background-color: #59809b;
 }
 
-.student_link_btn a:hover {
-  color: #2e2e3a;
-}
 /* ! the end of the style for the students cards footer */
 /* ? footer of the main page */
 .main_footer {
@@ -580,64 +838,856 @@ nav {
   background-color: #59809b;
 }
 
-.spacex-content {
-  background-color: #ffffff10;
-  backdrop-filter: blur(1px);
-  -webkit-background-filter: blur(1 px);
-  z-index: -1;
+/* !
+!-----------------------------
+!-----------------------------
+!       COLONISATION PROPERTIES
+!-------------------------------
+!-------------------------------
+! */
+
+/* position of the main title arranged in the 
+midle so it will stay always in the middle */
+.coltitle {
+  position: flex;
+  justify-content: space-around;
+  text-align: center;
+  margin-top: 105px;
 }
 
-.spacex-content {
-  margin-top: 50px;
-  margin-left: 100px;
-  margin-right: 100px;
-  margin-bottom: 50px;
-  border-radius: 15px;
-}
-
+/* main title properties */
 .colonisation-title {
-  position: absolute;
   font-family: "nasalization", Arial;
-  width: 100px;
-  margin-left: auto 50px;
+  color: #59809b;
+  text-shadow: 0.1em 0.1em 0 #212121;
+  font-weight: 900;
+  letter-spacing: 2px;
+  font-size: 40px;
+  transition: 0.5s;
+  cursor: context-menu;
 }
 
+/* main title effects when we hover */
+.colonisation-title:hover {
+  text-shadow: -0.1em 0.1em 0 #212121;
+}
 
+/* space colonisation title properties */
+.col-space {
+  position: static;
+  margin-top: 25px;
+  text-align: center;
+  color: #212121;
+  font-family: "Gill Sans", sans-serif;
+  font-size: 30px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  text-shadow: 3px 2px #c9aca6;
+  transition: 0.4s;
+}
 
+/* title effect */
+.col-space:hover {
+  text-shadow: 3px 2px #154160;
+}
 
+/* colonisation of space text properties  */
+.col-space-text {
+  position: static;
+  margin-top: 15px;
+  margin-left: 50px;
+  margin-right: 50px;
+  text-align: center;
+  font-size: 22px;
+  font-family: "prototype", Arial, Helvetica, sans-serif;
+  transition: 0.4s;
+}
 
+/* space history tile properties */
+.col-space-history {
+  position: static;
+  text-align: center;
+  margin-top: 15px;
+  display: block;
+  color: #212121;
+  font-family: "Gill Sans", sans-serif;
+  font-size: 30px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  text-shadow: 3px 2px #c9aca6;
+  transition: 0.4s;
+}
 
+/* hover effect of the space history subtitle */
+.col-space-history:hover {
+  text-shadow: 3px 2px #154160;
+}
 
+/* space history text style properties */
+.col-space-history-text {
+  position: static;
+  margin-top: 30px;
+  margin-left: 50px;
+  margin-right: 50px;
+  text-align: center;
+  font-size: 22px;
+  font-family: "prototype", Arial, Helvetica, sans-serif;
+  transition: 0.4s;
+}
 
+/* apollo title when we hover */
+.appollo-title {
+  position: static;
+  margin-top: 30px;
+  text-align: center;
+  display: block;
+  color: #212121;
+  font-family: "Gill Sans", sans-serif;
+  font-size: 30px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  text-shadow: 3px 2px #c9aca6;
+  transition: 0.4s;
+}
 
+/* apollo title properties when we hover */
+.appollo-title:hover {
+  text-shadow: 3px 2px #154160;
+}
 
+/* style protperties of apollo text */
+.apollo-text {
+  position: static;
+  margin-top: 30px;
+  margin-left: 50px;
+  margin-right: 50px;
+  text-align: center;
+  font-size: 22px;
+  font-family: "prototype", Arial, Helvetica, sans-serif;
+  transition: 0.4s;
+}
 
+/* the text of all the subtitles */
+.col-space-text,
+.col-space-history-text,
+.apollo-text {
+  border-radius: 20px;
+  padding: 10px;
+  background: #d37ea8;
+  background-repeat: no-repeat;
+  transition: 0.8s;
+  animation: col-text 5s infinite;
+}
 
+@keyframes col-text {
+  0% {
+    background: #59809b;
+  }
+  50% {
+    background: #d37ea8;
+  }
+  100% {
+    background: #59809b;
+  }
+}
 
+/* Style properties change when we hover text */
+.col-space-history-text:hover,
+.col-space-text:hover,
+.apollo-text:hover {
+  box-shadow: 3px 4px 5px #212121;
+}
+
+/*! image slider at colonisation moon landing */
+
+/* css for manual  slide navigator */
+
+.mySlides {
+  display: none;
+}
+img {
+  vertical-align: middle;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 800px;
+  position: relative;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 5px;
+}
+
+.slideshow-container img:hover {
+  box-shadow: 7px 5px 4px #154160;
+  border-radius: 30px;
+}
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: #717171;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: #2e2e3a;
+  font-size: 23px;
+  color: #59809b;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  margin-bottom: 10px;
+  background-color: #c9aca6;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* style of the dots that tells which one of the images is active */
+/* when we hover over a dot it will change the 
+color and size tellin that we are going to click that on  */
+.active,
+.dot:hover {
+  background-color: #717171;
+  height: 17px;
+  width: 17px;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+/* fade display when we change the image */
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev,
+  .next,
+  .text {
+    font-size: 11px;
+  }
+}
+
+/* !
+!-----------------------------
+!-----------------------------
+!       Space X PROPERTIES
+!-------------------------------
+!-------------------------------
+! */
+
+/* *spacex content style */
+/* space x title style properties 
+so it will stay in the middle in all the formats */
+.spx-title {
+  position: flex;
+  justify-content: space-around;
+  text-align: center;
+  margin-top: 300px;
+}
+/* the style/look of the title */
+.spacex-title {
+  font-family: "nasalization", Arial;
+  color: #212121;
+  text-shadow: 0.1em 0.1em 0 #59809b;
+  font-weight: 900;
+  letter-spacing: 2px;
+  font-size: 80px;
+  transition: 0.5s;
+  cursor: context-menu;
+}
+
+/* when we hover over the title change the shadow position and the color */
+.spacex-title:hover {
+  text-shadow: -0.1em 0.1em 0 #154160;
+}
+/* * image background */
+.spx-firstbck {
+  /* The image used */
+  background-image: url("../images/falcon9bck.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 370px;
+}
+.spx-falcon9 {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 900px;
+  font-family: "prototype", sans-serif;
+  font-size: 60px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+/* * falcon 9 sub title */
+.spx-falconsubt {
+  position: absolute;
+  left: 50%;
+  top: 950px;
+  transform: translate(-50%, -50%);
+  color: #000000;
+  font-size: 20px;
+  font-family: "Lucida Sans", Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+/* falcon stats */
+.spx-grid-container {
+  position: absolute;
+  top: 1090px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+}
+/* the items of the the stats style */
+.spx-grid-container .grid-item {
+  padding-bottom: 30px;
+  padding-left: 170px;
+  padding-right: 170px;
+  font-size: 30px;
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  cursor: context-menu;
+  transition: 0.9s;
+}
+/* when we hover over the stats of the falcon spaceship */
+.spx-grid-container #spx-1:hover {
+  color: white;
+}
+.spx-grid-container #spx-2:hover {
+  color: white;
+}
+.spx-grid-container #spx-3:hover {
+  color: white;
+}
+.falcon-intro {
+  position: absolute;
+  top: 1250px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "nasalization", Arial, Helvetica, sans-serif;
+  font-size: 22px;
+  text-align: center;
+}
+/* responsive falcon*/
+@media screen and (max-width: 768px) {
+  .spx-falcon9 {
+    top: 800px;
+    font-size: 30px;
+  }
+  .spx-falconsubt {
+    top: 850px;
+    font-size: 10px;
+  }
+  .spx-grid-container {
+    top: 910px;
+  }
+  .spx-grid-container .grid-item {
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 15px;
+    padding-bottom: 10px;
+  }
+  .falcon-intro {
+    top: 990px;
+    font-size: 10px;
+  }
+}
+/* responsive falcon*/
+
+.falcon-news {
+  position: static;
+  text-align: center;
+  margin-top: 100px;
+  width: 700px;
+  margin-left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "prototype", sans-serif;
+  font-size: 25px;
+}
+.spx-scnd-bck {
+  margin-bottom: 40px;
+}
+/* the style of the text when we are in the property of the phone */
+@media screen and (max-width: 768px) {
+  .falcon-news {
+    width: 400px;
+    margin-top: 80px;
+    font-size: 15px;
+  }
+}
+/* style of the video */
+.falcon-video {
+  position: relative;
+  margin-left: 50%;
+  transform: translate(-50%);
+  width: 700px;
+  height: 400px;
+  border-radius: 20px;
+  opacity: 80%;
+  transition: 0.3s;
+}
+/* when we hover over the video in space x  */
+.falcon-video:hover {
+  border-radius: 25px;
+  opacity: 100%;
+}
+/* the size of the video will be changed */
+@media screen and (max-width: 768px) {
+  .falcon-video {
+    width: 350px;
+    height: 230px;
+  }
+}
+
+/* !
+!-----------------------------
+!-----------------------------
+!      LIFE IN MARS
+!-------------------------------
+!-------------------------------
+! */
+/* !error 404 page not found style */
+/* * displaying the gif in the middle */
+.mars-gif {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 90px;
+}
+
+/* * giving a border radius to the image so it will look rounded*/
+.mars-gif img {
+  border-radius: 50%;
+}
+
+.mars-gif p {
+  position: absolute;
+  font-family: "Trebuchet MS", Arial, sans-serif;
+}
+
+/* *Puttin the error text in the middle of the planet*/
+
+.error {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* *decorating the error text*/
+.error h1 {
+  font-family: "Segoe UI", Verdana;
+  font-size: 50px;
+  color: #212121;
+  transition: 0.4s;
+  cursor: context-menu;
+}
+
+/* give a shadow when we hover over the error 404*/
+.error h1:hover {
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff, 0 0 80px #fff,
+    0 0 120px #fff;
+}
+
+/* the buttons for return options after the page wasn't found*/
+/* position*/
+.error_return_options {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 30px;
+}
+/* button style */
+.error_return_options button {
+  width: 250px;
+  height: 50px;
+  border-radius: 20px;
+  border-color: #154160;
+  font-size: 17px;
+  color: #154160;
+  background-color: #c9aca6;
+  cursor: pointer;
+  transition: 0.8s;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+/* when the user hover */
+.error_return_options button:hover {
+  color: #c9aca6;
+  border-color: #c9aca6;
+  border-bottom-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+/* the animation of the color changing */
+.error_return_options button::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #154160;
+  transition: 0.5s cubic-bezier(1, 2, 0.2, 0.6);
+}
+
+/* the color will slide till all the button is filled with that color */
+.error_return_options button:hover::before {
+  width: 100%;
+}
+
+/* ? -----------------------------------------------------------------------------------------------------------------*/
+/* 
+! /////////////////////////////
+! /////////////////////////////
+! //// Tringa Rexhepaj Work ////////////
+! /////////////////////////////
+! ////////////////////////////
+!*/
+/* ? -----------------------------------------------------------------------------------------------------------------*/
+
+/* Style for the background container */
+.neu-background {
+  background: linear-gradient(to top right, #59809b 0%, #ff99cc 100%);
+  min-height: 100vh;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  font-family: "exo-2-0", sans-serif;
+  position: relative;
+}
+/* Style for the header container */
+.ai-header-container {
+  position: relative;
+  background-color: #b5a1cf;
+  top: 0%;
+  min-height: 337px;
+}
+/* Style for the video inside the header container */
+.ai-vid-container {
+  position: absolute;
+  left: 0px;
+}
+/* Style for the text inside the header container */
+.ai-text-container {
+  position: absolute;
+  margin-top: 4%;
+  margin-left: 50%;
+  padding-right: 10%;
+  color: #59809b;
+  font-family: "Nasalization Regular", sans-serif;
+}
+
+.ai-text-container h1 {
+  font-size: 80px;
+  font-weight: 400;
+  text-shadow: 0 0 40px #fff, 0 0 20px #fff, 0 0 10px #ff99cc;
+}
+
+.ai-text-container p {
+  font-size: 30px;
+  font-weight: 400;
+  text-shadow: 0 0 40px #fff, 0 0 10px #fff, 0 0 4px #fff, 0 0 10px #ff99cc;
+}
+/* Style for the Read More button which takes you from header to the content of the page */
+.ai-text-container a {
+  text-decoration: none;
+  background: #ff99cc;
+  padding: 14px 40px;
+  display: inline-block;
+  color: #fff;
+  font-size: 18px;
+  margin-top: 20px;
+  border-radius: 30px;
+}
+/* Style to make the header responsive */
+@media all and (max-width: 1460px) and (min-width: 0px) {
+  .ai-text-container {
+    margin-right: 0%;
+    margin-left: 40%;
+    margin-top: 10%;
+  }
+  .ai-text-container h1 {
+    font-size: 40px;
+  }
+  .ai-text-container p {
+    font-size: 19px;
+  }
+  .ai-text-container a {
+    font-size: 12px;
+  }
+}
+
+/* Style for the content blocks which utilize the grid display. */
+/* Used for the 3 block content+image boxes in neuralink.html and vr.html as well as the accordion buttons with panels in shopping.html and gaming.html*/
+
+.ai-contentbox {
+  background: linear-gradient(to top right, #59809b 0%, #ff99cc 100%);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-rows: repeat(3) minmax(600, 1fr);
+}
+
+/* Style for the content in the accordion+panel grids */
+.ai-content {
+  padding: 1.5em;
+  margin: 5px;
+}
+
+.ai-content h4 {
+  font-weight: bold;
+  font-size: large;
+}
+.ai-content h4,
+.ai-content p {
+  float: left;
+  text-shadow: 0 0 40px #59809b, 0 0 20px #59809b, 0 0 10px #ff99cc;
+  font-family: "Nasalization Regular", sans-serif;
+}
+.ai-content h4,
+.ai-content p {
+  float: left;
+}
+/* Style for the accordion effect on the button + panel elements in the grid above */
+
+.ai-accordion {
+  background: linear-gradient(to top right, #59809b 0%, #ff99cc 100%);
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.ai-accordion:hover {
+  background: linear-gradient(to top right, #3d6a88 0%, #d180a9 100%);
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.ai-panel {
+  padding: 18px;
+  background: linear-gradient(to top right, #59809b 0%, #ff99cc 100%);
+  display: none;
+  overflow: hidden;
+}
+
+/* Style for the content+image grids */
+.ai-content1 {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  padding: 10px;
+  font-family: "Nasalization Regular", sans-serif;
+}
+
+.ai-content2 {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  padding: 10px;
+  font-family: "Nasalization Regular", sans-serif;
+}
+.ai-content3 {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  padding: 10px;
+  font-family: "Nasalization Regular", sans-serif;
+}
+
+/* Style for the containers with text and an image in the side */
+div.ai-bigcontainer {
+  display: block;
+  border: solid #59809b 5px;
+  border-radius: 15px;
+  display: table;
+  padding: 5px;
+  width: 100%;
+  margin: 5px 0;
+}
+div.ai-contenttxt {
+  vertical-align: middle;
+  display: table-cell;
+  text-align: justify;
+  padding-right: 10%;
+  font-family: "Nasalization Regular", sans-serif;
+}
+div.ai-bigcontainer .ai-imgonside {
+  vertical-align: middle;
+  display: table-cell;
+  padding-right: 5px;
+  width: 40%;
+}
+div.ai-imgonside img {
+  width: 50%;
+  padding-left: 3%;
+  vertical-align: middle;
+}
+
+/* Style for the containers with text and a video on the side */
+div.ai-bigcontainer .ai-vidside1 {
+  vertical-align: middle;
+  display: table-cell;
+  padding-right: 5px;
+  margin-left: 10px;
+}
+
+div.ai-bigcontainer .ai-vidside2 {
+  vertical-align: middle;
+  display: table-cell;
+  margin-left: 10px;
+}
+
+/* Style for the tables with content in vr.html */
+.ai-table {
+  margin: auto;
+  padding: 20px;
+  width: 90%;
+  font-family: "Nasalization Regular", sans-serif;
+}
+
+.ai-table th {
+  text-shadow: 0 0 40px #59809b, 0 0 20px #b5a1cf, 0 0 10px #ff99cc;
+  padding: 15px;
+  font-size: 30px;
+  left: 0px;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.ai-table td {
+  padding: 15px;
+  font-size: 25px;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.ai-table td p {
+  padding: 15px;
+  font-size: 20px;
+}
+/*Arrow that scrolls up when you click it*/
+#ai-scrollToTop {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  background: none;
+  border-radius: 50px;
+  outline: none;
+  cursor: pointer;
+  opacity: 50%;
+}
+#ai-scrollToTop:hover {
+  background: #59809b;
+  opacity: 100%;
+}
+
+#ai-scrollToTop:active {
+  background: #59609b;
+}
+
+#ai-readMore {
+  cursor: pointer;
+}
+#ai-readMore:active {
+  background-color: #e288b5;
+}
+
+/* !\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+!\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+! /////////// Arita Ismajli ///////////
+!\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+!\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+*/
 
 /* TOURISM CSS */
 /* every class and id of mine about tourism has the "t-" prefix */
 
-
-#t-pannels{
+#t-pannels {
   margin-top: 60px;
   margin-bottom: 60px;
   z-index: -1;
 }
 
-.t-sections{
+.t-sections {
   margin-top: 20px;
   width: 50%;
-/*  z-index: -1;*/
+  /* z-index: -1; */
 }
 
-#t-section1, #t-section3{
+#t-section1,
+#t-section3 {
   margin-left: 10%;
   margin-right: 40%;
   background-color: #2e2e3a;
 }
 
-#t-section2, #t-section4{
+#t-section2,
+#t-section4 {
   margin-right: 10%;
   margin-left: 40%;
   background-color: #2e2e3a;
@@ -650,30 +1700,33 @@ nav {
   margin-right: 16px;
 }
 
-#t-section1, #t-section3, #t-section2, #t-section4{
+#t-section1,
+#t-section3,
+#t-section2,
+#t-section4 {
   position: relative;
   text-align: center;
   color: white;
 }
 
-#t-section1{
+#t-section1 {
   height: 400px;
   border-radius: 0.9em;
   position: relative;
   width: 50%;
 }
 
-#t-section2{
+#t-section2 {
   height: 400px;
   border-radius: 0.9em;
 }
 
-#t-section3{
+#t-section3 {
   height: 400px;
   border-radius: 0.9em;
 }
 
-#t-section4{
+#t-section4 {
   height: 400px;
   border-radius: 0.9em;
 }
@@ -686,57 +1739,100 @@ nav {
   border-radius: 0.9em;
 }
 
-h2{
+h2 {
   color: white;
   font-family: "Prototype";
   border-radius: 0.9em;
 }
 
-a.t-button1{
+a.t-button1 {
   border-radius: 0.9em;
 }
 
-
-img:hover{
+.t-image:hover {
   opacity: 0.4;
 }
 
-.t-tourism-heading{
-    text-align: center;
-    margin-top: 70px;
-    font-size: 50px;
-    font-family: "Exo 2.0", arial;
-    color: white;
+.t-tourism-heading {
+  text-align: center;
+  margin-top: 70px;
+  font-size: 50px;
+  font-family: "Exo 2.0", arial;
+  color: white;
 }
 
-.t-headings-1, .headings-2{
-    text-align: center;
-    margin: 5px;
+.t-headings-1,
+.headings-2 {
+  text-align: center;
+  margin: 5px;
 }
 
-/* .t-titles{
-    
-} */
-
-.t-headings-1{
-/*    make them block elements*/
-    font-family: "Exo 2.0", arial;
+.t-headings-1 {
+  /*    make them block elements*/
+  font-family: "Exo 2.0", arial;
 }
 
-.t-headings-2{
-    font-family: "Exo 2.0", arial;
-    text-align: center;
+.t-headings-2 {
+  font-family: "Exo 2.0", arial;
+  text-align: center;
 }
 
-.t-titles-section{
-    margin-top: 70px;
+.t-titles-section {
+  margin-top: 70px;
 }
 
+.t-leftimage {
+  overflow: hidden;
+  object-fit: cover;
+  border-radius: 0.9em;
+  padding: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
 
+.t-split {
+  display: inline;
+  text-align: center;
+}
 
+.t-subcontent {
+  margin: 30px;
+}
 
+/* the style for the 4 sub-webpages*/
 
+.t-split {
+  overflow-x: hidden;
+  height: 100%;
+}
 
+.t-left {
+  left: 0px;
+  width: 35%;
+}
 
+.t-right {
+  float: right;
+  right: 0px;
+  width: 65%;
+}
 
+.t-leftimage {
+  height: 250px;
+  position: relative;
+}
 
+.t-paragraph {
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
+.t-container {
+  margin-top: 30px;
+}
+
+main {
+  padding-bottom: 50px;
+}
