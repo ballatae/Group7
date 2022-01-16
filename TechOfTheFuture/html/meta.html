@@ -57,28 +57,28 @@ body{
     top: 150px;
     position: relative;
     text-align: center;
-    color: white;
+    color: rgb(50, 111, 202);
     left: 370px;
 }
 .bi-whatsapp{
     position: relative;
     text-align: center;
     top: 150px;
-    color: white;
+    color: rgba(21, 121, 30, 0.959);
     left: 470px;
 }
 .bi-messenger{
     position: relative;
     left: 570px;
     top: 150px;
-    color: white;
+    color: rgb(75, 129, 209);
 }
 .bi-instagram{
     position: relative;
     top: 150px;
     left: 670px;
     text-align: center;
-    color: white;
+    color: rgb(214, 121, 34);
 }
 .box{
   position: relative;
@@ -97,22 +97,18 @@ body{
   margin-bottom: 20px;
 }
 .parag1{
-  position: relative;
-  top: 300px;
+margin-top: 300px;
   text-align: center;  height: 120px;
   color: white;
   font-family:  "nasalization-rg", serif;
   font-size: 32px;
 }
 .photo01{
-  position: absolute;
-  opacity: 1;
-  top: 1350px;
-  left: 20%;
+  margin-top: 150px;
+  margin-left: 20%;
   
 }
 .parag2{
-  position: relative;
   top: 1200px;
   height: 120px;
   color: white;
@@ -121,37 +117,29 @@ body{
 }
 
 .parag3{
-  position: relative;
-  top: 1300px;
+  margin-top: 100px;
   height: 120px;
   color: white;
   font-family:  "nasalization-rg", serif;
   font-size: 32px;
 }
 .parag4{
-  position: relative;
-  top: 1500px;
-  
+  margin-top: 150px;
   height: 120px;
   color: white;
   font-family:  "nasalization-rg", serif;
   font-size: 32px;
 }
 .parag5{
-  position: relative;
-  top: 1700px;
-  
+  margin-top: 150px;
   height: 120px;
   color: white;
   font-family:  "nasalization-rg", serif;
   font-size: 32px;
 }
 .photo02{
-  position: absolute;
-  opacity: 1;
-  top: 3250px;
-  left: 35%;
-  border: solid rgb(119, 0, 255);
+  margin-top: 250px;
+  margin-left: 35%;
 }
 #myBtn {
   display: none; /* Hidden by default */
@@ -178,39 +166,82 @@ body{
     <meta name="viewport" contt="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="shortcut icon" type="image/x-icon" href="../other/Logo/Logo.png">
-    <link rel="stylesheet" href="other/style.css">
+    <link rel="stylesheet" href="../other/style.css">
     <title>Tech of the Future</title>
   
 </head>
 <body>
-    <nav style="z-index: 1;">
-        <div class="logo">
-            <h4>Tech of the Future</h4>
-        </div>
-        <ul class="nav-links">
-            <li>
-                <a href="#">AI</a>
-            </li>
-            <li>
-                <a href="#">Colonisation</a>
-            </li>
-            <li>
-                <a href="#">Tourism</a>
-            </li>
-            <li>
-                <a href="#">Transportation</a>
-            </li>
-            <li>
-                <a href="#">Communication</a>
-            </li>
-        </ul>
-        <div class="burger">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
-        </div>
-    </nav>
+    <nav>
+      <div data-text="TECH OF THE FUTURE" class="logo">
+        <h4><a href=../index.html>Tech of the Future</a></h4>
+      </div>
     
+      <ul class="nav-links">
+        <li>
+          <a href="AI.html">AI</a>
+          <div class="sub-menu-1">
+            <ul>
+              <li><a href="vr.html">Virtual Reality</a></li>
+              <li><a href="neuralink.html">Neuralink</a></li>
+              <li><a href="gaming.html">Gaming</a></li>
+              <li><a href="shopping.html">Shopping</a></li>
+            </ul>
+          </div>
+    
+    
+        </li>
+        <li>
+          <a href="colonisation.html">Colonisation</a>
+          <div class="sub-menu-1">
+            <ul>
+              <li><a href="spacex.html">Space X</a></li>
+              <li><a href="lifeinmars.html">Life in Mars</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav-cells">
+          <a href="tourism.html">Tourism</a>
+          <div class="sub-menu-1">
+            <ul>
+              <li><a href="t-general.html">General Knowledge</a></li>
+              <li><a href="t-blueorigin.html">Blue Origin</a></li>
+              <li><a href="t-worldsfirsthotel.html">World's First Hotel</a></li>
+              <li><a href="t-spacetourismnowvsfuture.html">Space Tourism Now vs Future</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="transportation.html">Transportation</a>
+          <div class="sub-menu-1">
+            <ul>
+              <li><a href="futureSpace.html">Future Space</a></li>
+              <li><a href="futureTraffic.html">Future Traffic</a></li>
+              <li><a href="futureVehicles.html">Future Vehicles</a></li>
+              <li><a href="futureEarth.html">Future Earth</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="communication.html">Communication</a>
+          <div class="sub-menu-1">
+            <ul>
+              <li><a href="fiveG.html">5G</a></li>
+              <li><a href="smartphones.html">Smartphones</a></li>
+              <li><a href="meta.html">Meta</a></li>
+              <li><a href="machinetomachine.html">M2M</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    
+      <!-- ? The Nav Bar-->
+      <!-- ? Burger only on mobile mode-->
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </nav>
     <div class="ss">
         <div class="title1">
          <svg xmlns="http://www.w3.org/2000/svg" width="150" height="150" fill="currentColor" class="bi bi-meta" viewBox="0 0 16 16">
@@ -221,7 +252,8 @@ body{
     </div>
 
         <div class="p1">
-        </div>    
+        </div> 
+         
         <a id="GoToFacebook"><svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
           <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
         </svg></a>
@@ -242,12 +274,13 @@ body{
         <div class="paragraph1">
           <h2> Virtual reality</h2><br>
         </div> 
+      
         <div class="parag1">
           <p>Virtual reality lets you explore new worlds and shared experiences. <br>With Quest, even if you’re far apart, you can discover new experiences<br> with
             friends and family together.</p>
         </div>
         <div class="photo01">
-          <img src="../images/vrcom.jpg.jpg" width="900px" height="600px">
+          <img src="../images/vrcom.jpg.jpg" width="900px" height="600px" >
         </div>
         <div class="parag2">
           <h2>Facebook</h2><br>
@@ -283,8 +316,6 @@ body{
         <div class="photo02">
           <img src="../images/like.jpg" width="470px" height="700px">
         </div>
-
-        <script src="../other/main.js"></script>
         <script>
           const Facebook = document.getElementById("GoToFacebook");
           Facebook.addEventListener("click", function(){
@@ -327,8 +358,11 @@ body{
 </script>
 
 <button onclick="topFunction()" id="myBtn" title="Go to top">Go to the top</button>
-      
 
+<div class="main_footer">
+  <a href="../students/student4.html"><button class="worked_by_student">Andjela Levkic</button></a>
+</div>
+<script src="../other/main.js"></script>
 <!-- Get the button: -->
 <script>
   mybutton = document.getElementById("myBtn");

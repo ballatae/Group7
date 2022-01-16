@@ -1,7 +1,19 @@
+/* CREATOR: ETNIK BALLATA */
+
+@font-face {
+  font-family: nasalization;
+  src: url(../other/Fonts/nasalization-free.zip);
+}
+@font-face {
+  font-family: prototype;
+  src: url(../other/Fonts/prototype.zip);
+}
+
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 } /* *fit all the web*/
 /* background color used in most of the pages */
 body {
@@ -48,7 +60,7 @@ nav {
   align-items: center;
   min-height: 8vh;
   background-color: #59809b;
-  font-family: "Nasalization Regular", sans-serif;
+  font-family: nasalization, sans-serif;
   z-index: 1;
 } /* *nav-bar style */
 
@@ -256,7 +268,7 @@ than 768px  the burger form will be displayed */
   width: 500px;
   margin: 270px auto;
   color: #2e2e3a;
-  font-family: "prototype", sans-serif;
+  font-family: prototype, sans-serif;
   letter-spacing: 3px;
   font-size: 300%;
   text-align: center;
@@ -265,10 +277,7 @@ than 768px  the burger form will be displayed */
 
 /* opening text animation */
 .openingText span {
-  transition: 4s;
-  animation: opening-text 1s infinite;
-  /* animation-name: opening-text;
-  animation-duration: 1s; */
+  animation: opening-text 2.5s infinite;
 }
 
 /* the shadow animation at the opening text */
@@ -307,7 +316,7 @@ the content off the main page will be displayed */
 .content p {
   padding: 2%;
   color: #2e2e3a;
-  font-family: "nasalization", sans-serif;
+  font-family: nasalization, sans-serif;
 }
 
 /* all the sub pages diplayed inside another container inside the content */
@@ -341,7 +350,7 @@ the content off the main page will be displayed */
   padding-top: 1em;
   padding-bottom: 1em;
   margin-top: 12em;
-  font-family: "prototype", sans-serif;
+  font-family: prototype, sans-serif;
   color: #c9aca6;
   background-color: #2e2e3a;
   margin-left: 10px;
@@ -362,7 +371,7 @@ the content off the main page will be displayed */
   padding-top: 1em;
   padding-bottom: 1em;
   margin-top: 12em;
-  font-family: "prototype", sans-serif;
+  font-family: prototype, sans-serif;
   color: #c9aca6;
   background-color: #2e2e3a;
   margin-left: 10px;
@@ -383,7 +392,7 @@ the content off the main page will be displayed */
   padding-top: 1em;
   padding-bottom: 1em;
   margin-top: 12em;
-  font-family: "prototype", sans-serif;
+  font-family: prototype, sans-serif;
   color: #c9aca6;
   background-color: #2e2e3a;
   margin-left: 10px;
@@ -407,7 +416,7 @@ the content off the main page will be displayed */
   padding-bottom: 1em;
   margin-top: 12em;
   right: 42px;
-  font-family: "prototype", sans-serif;
+  font-family: prototype, sans-serif;
   color: #c9aca6;
   background-color: #2e2e3a;
   margin-left: 10px;
@@ -504,7 +513,7 @@ the content off the main page will be displayed */
   top: 75px;
   left: 15px;
   background-color: #154160;
-  animation: ballmovement 20s infinite;
+  animation: ballmovement 15s infinite;
   animation-direction: alternate;
 }
 /* animation for the ball to move through the page */
@@ -513,11 +522,11 @@ the content off the main page will be displayed */
     transform: translateX(0);
   }
   25% {
-    transform: translateY(3150%);
+    transform: translateY(3080%);
     background-color: #5b1f5b;
   }
   50% {
-    transform: translateX(7400%) translateY(3150%);
+    transform: translateX(7400%) translateY(3080%);
     background-color: #154160;
   }
   75% {
@@ -693,7 +702,7 @@ the content off the main page will be displayed */
 .card__header h2 {
   color: #fff;
   font-size: 25px;
-  font-family: "prototype", Courier, monospace;
+  font-family: prototype, Courier, monospace;
   letter-spacing: 1.5px;
   font-weight: 900;
   text-transform: uppercase;
@@ -731,7 +740,7 @@ the content off the main page will be displayed */
   width: 100%;
   height: 3.5em;
   background-color: #59809b;
-  font-family: "prototype", sans-serif;
+  font-family: prototype, sans-serif;
 }
 
 /* display so it will be responsive */
@@ -770,7 +779,7 @@ will be with the active properties */
 .student_link_btn {
   text-decoration: none;
   color: #c9aca6;
-  font-family: "prototype", sans-serif;
+  font-family: prototype, sans-serif;
 }
 
 /* the transitions for a smoother hover effect */
@@ -799,7 +808,7 @@ will be with the active properties */
   width: 100%;
   height: 3.5em;
   background-color: #59809b;
-  font-family: "prototype", sans-serif;
+  font-family: prototype, sans-serif;
 }
 
 .main_footer {
@@ -818,7 +827,7 @@ will be with the active properties */
   border-width: medium;
   background-color: #2e2e3a;
   cursor: pointer;
-  font-family: "nasalization", Courier, monospace;
+  font-family: nasalization, Courier, monospace;
 }
 
 .main_footer,
@@ -857,7 +866,7 @@ midle so it will stay always in the middle */
 
 /* main title properties */
 .colonisation-title {
-  font-family: "nasalization", Arial;
+  font-family: nasalization, Arial;
   color: #59809b;
   text-shadow: 0.1em 0.1em 0 #212121;
   font-weight: 900;
@@ -878,7 +887,7 @@ midle so it will stay always in the middle */
   margin-top: 25px;
   text-align: center;
   color: #212121;
-  font-family: "Gill Sans", sans-serif;
+  font-family: nasalization, sans-serif;
   font-size: 30px;
   letter-spacing: 1px;
   cursor: pointer;
@@ -899,7 +908,7 @@ midle so it will stay always in the middle */
   margin-right: 50px;
   text-align: center;
   font-size: 22px;
-  font-family: "prototype", Arial, Helvetica, sans-serif;
+  font-family: prototype, Arial, Helvetica, sans-serif;
   transition: 0.4s;
 }
 
@@ -910,7 +919,7 @@ midle so it will stay always in the middle */
   margin-top: 15px;
   display: block;
   color: #212121;
-  font-family: "Gill Sans", sans-serif;
+  font-family: nasalization, sans-serif;
   font-size: 30px;
   letter-spacing: 1px;
   cursor: pointer;
@@ -931,7 +940,7 @@ midle so it will stay always in the middle */
   margin-right: 50px;
   text-align: center;
   font-size: 22px;
-  font-family: "prototype", Arial, Helvetica, sans-serif;
+  font-family: prototype, Arial, Helvetica, sans-serif;
   transition: 0.4s;
 }
 
@@ -942,7 +951,7 @@ midle so it will stay always in the middle */
   text-align: center;
   display: block;
   color: #212121;
-  font-family: "Gill Sans", sans-serif;
+  font-family: nasalization, sans-serif;
   font-size: 30px;
   letter-spacing: 1px;
   cursor: pointer;
@@ -963,7 +972,7 @@ midle so it will stay always in the middle */
   margin-right: 50px;
   text-align: center;
   font-size: 22px;
-  font-family: "prototype", Arial, Helvetica, sans-serif;
+  font-family: prototype, Arial, Helvetica, sans-serif;
   transition: 0.4s;
 }
 
@@ -1132,7 +1141,7 @@ so it will stay in the middle in all the formats */
 }
 /* the style/look of the title */
 .spacex-title {
-  font-family: "nasalization", Arial;
+  font-family: nasalization, Arial;
   color: #212121;
   text-shadow: 0.1em 0.1em 0 #59809b;
   font-weight: 900;
@@ -1165,7 +1174,7 @@ so it will stay in the middle in all the formats */
   left: 50%;
   transform: translate(-50%, -50%);
   top: 900px;
-  font-family: "prototype", sans-serif;
+  font-family: prototype, sans-serif;
   font-size: 60px;
   letter-spacing: 5px;
   text-transform: uppercase;
@@ -1179,7 +1188,8 @@ so it will stay in the middle in all the formats */
   transform: translate(-50%, -50%);
   color: #000000;
   font-size: 20px;
-  font-family: "Lucida Sans", Geneva, Verdana, sans-serif;
+  letter-spacing: 0.1em;
+  font-family: prototype, Verdana, sans-serif;
   text-align: center;
 }
 /* falcon stats */
@@ -1218,7 +1228,7 @@ so it will stay in the middle in all the formats */
   top: 1250px;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-family: "nasalization", Arial, Helvetica, sans-serif;
+  font-family: nasalization, Arial, Helvetica, sans-serif;
   font-size: 22px;
   text-align: center;
 }
@@ -1255,7 +1265,7 @@ so it will stay in the middle in all the formats */
   width: 700px;
   margin-left: 50%;
   transform: translate(-50%, -50%);
-  font-family: "prototype", sans-serif;
+  font-family: prototype, sans-serif;
   font-size: 25px;
 }
 .spx-scnd-bck {
@@ -1318,7 +1328,7 @@ so it will stay in the middle in all the formats */
 
 .mars-gif p {
   position: absolute;
-  font-family: "Trebuchet MS", Arial, sans-serif;
+  font-family: nasalization, Arial, sans-serif;
 }
 
 /* *Puttin the error text in the middle of the planet*/
@@ -1332,7 +1342,7 @@ so it will stay in the middle in all the formats */
 
 /* *decorating the error text*/
 .error h1 {
-  font-family: "Segoe UI", Verdana;
+  font-family: prototype, Verdana;
   font-size: 50px;
   color: #212121;
   transition: 0.4s;
@@ -1437,7 +1447,7 @@ so it will stay in the middle in all the formats */
   margin-left: 50%;
   padding-right: 10%;
   color: #59809b;
-  font-family: "Nasalization Regular", sans-serif;
+  font-family: nasalization, sans-serif;
 }
 
 .ai-text-container h1 {
@@ -1504,7 +1514,7 @@ so it will stay in the middle in all the formats */
 .ai-content p {
   float: left;
   text-shadow: 0 0 40px #59809b, 0 0 20px #59809b, 0 0 10px #ff99cc;
-  font-family: "Nasalization Regular", sans-serif;
+  font-family: nasalization, sans-serif;
 }
 .ai-content h4,
 .ai-content p {
@@ -1543,7 +1553,7 @@ so it will stay in the middle in all the formats */
   align-items: center;
   justify-items: center;
   padding: 10px;
-  font-family: "Nasalization Regular", sans-serif;
+  font-family: nasalization, sans-serif;
 }
 
 .ai-content2 {
@@ -1551,14 +1561,14 @@ so it will stay in the middle in all the formats */
   align-items: center;
   justify-items: center;
   padding: 10px;
-  font-family: "Nasalization Regular", sans-serif;
+  font-family: nasalization, sans-serif;
 }
 .ai-content3 {
   display: grid;
   align-items: center;
   justify-items: center;
   padding: 10px;
-  font-family: "Nasalization Regular", sans-serif;
+  font-family: nasalization, sans-serif;
 }
 
 /* Style for the containers with text and an image in the side */
@@ -1576,7 +1586,7 @@ div.ai-contenttxt {
   display: table-cell;
   text-align: justify;
   padding-right: 10%;
-  font-family: "Nasalization Regular", sans-serif;
+  font-family: nasalization, sans-serif;
 }
 div.ai-bigcontainer .ai-imgonside {
   vertical-align: middle;
@@ -1609,7 +1619,7 @@ div.ai-bigcontainer .ai-vidside2 {
   margin: auto;
   padding: 20px;
   width: 90%;
-  font-family: "Nasalization Regular", sans-serif;
+  font-family: nasalization, sans-serif;
 }
 
 .ai-table th {
@@ -1656,6 +1666,49 @@ div.ai-bigcontainer .ai-vidside2 {
 #ai-readMore:active {
   background-color: #e288b5;
 }
+
+/* referencing page style  */
+.main-ref {
+  position: static;
+  width: 50em;
+  height: 60em;
+  background-color: #154160;
+  margin-top: 10em;
+  margin-bottom: 10em;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  animation: ref 5s infinite;
+}
+
+@keyframes ref {
+  0% {
+    border-radius: 10px;
+    background-color: #154160;
+  }
+  50% {
+    border-radius: 30px;
+    background-color: #59809b;
+  }
+  100% {
+    border-radius: 10px;
+    background-color: #154160;
+  }
+}
+
+.text-sources {
+  position: static;
+  text-align: left;
+  width: 90%;
+  height: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2em;
+  font-family: "Times New Roman", Times, serif;
+  color: #ffffff;
+  font-size: 18px;
+}
+/* referencing page style  */
 
 /* !\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 !\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
@@ -1741,7 +1794,7 @@ div.ai-bigcontainer .ai-vidside2 {
 
 h2 {
   color: white;
-  font-family: "Prototype";
+  font-family: prototype;
   border-radius: 0.9em;
 }
 
