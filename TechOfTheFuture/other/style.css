@@ -1526,7 +1526,7 @@ so it will stay in the middle in all the formats */
   background: linear-gradient(to top right, #59809b 0%, #ff99cc 100%);
   color: rgb(255, 255, 255);
   cursor: pointer;
-  padding: 24px;
+  padding: 18px;
   width: 100%;
   text-align: left;
   border: none;
@@ -1541,8 +1541,7 @@ so it will stay in the middle in all the formats */
 
 /* Style the accordion panel. Note: hidden by default */
 .ai-panel {
-  padding: 24px;
-  color: #fff;
+  padding: 18px;
   background: linear-gradient(to top right, #59809b 0%, #ff99cc 100%);
   display: none;
   overflow: hidden;
@@ -1555,7 +1554,6 @@ so it will stay in the middle in all the formats */
   justify-items: center;
   padding: 10px;
   font-family: nasalization, sans-serif;
-  color: #fff;
 }
 
 .ai-content2 {
@@ -1564,7 +1562,6 @@ so it will stay in the middle in all the formats */
   justify-items: center;
   padding: 10px;
   font-family: nasalization, sans-serif;
-  color: #fff;
 }
 .ai-content3 {
   display: grid;
@@ -1572,7 +1569,6 @@ so it will stay in the middle in all the formats */
   justify-items: center;
   padding: 10px;
   font-family: nasalization, sans-serif;
-  color: #fff;
 }
 
 /* Style for the containers with text and an image in the side */
@@ -1591,7 +1587,6 @@ div.ai-contenttxt {
   text-align: justify;
   padding-right: 10%;
   font-family: nasalization, sans-serif;
-  color: #fff;
 }
 div.ai-bigcontainer .ai-imgonside {
   vertical-align: middle;
@@ -1625,7 +1620,6 @@ div.ai-bigcontainer .ai-vidside2 {
   padding: 20px;
   width: 90%;
   font-family: nasalization, sans-serif;
-  color: #fff;
 }
 
 .ai-table th {
@@ -1677,7 +1671,7 @@ div.ai-bigcontainer .ai-vidside2 {
 .main-ref {
   position: static;
   width: 50em;
-  height: 88em;
+  height: 150em;
   background-color: #154160;
   margin-top: 10em;
   margin-bottom: 10em;
