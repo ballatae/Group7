@@ -1346,6 +1346,7 @@ so it will stay in the middle in all the formats */
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  margin-top: 3em;
 }
 
 /* *decorating the error text*/
@@ -1370,7 +1371,8 @@ so it will stay in the middle in all the formats */
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  margin-bottom: 30px;
+  margin-top: 10em;
+  margin-bottom: 10em;
 }
 /* button style */
 .error_return_options button {
@@ -1423,7 +1425,7 @@ so it will stay in the middle in all the formats */
   margin-left: 50%;
   margin-right: 50%;
   transform: translate(-50%);
-  margin-bottom: 8em;
+  margin-bottom: 9.5em;
   font-family: nasalization, Arial, Helvetica, sans-serif;
   font-size: 30px;
 }
