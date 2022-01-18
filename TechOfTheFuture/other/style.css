@@ -1407,6 +1407,31 @@ so it will stay in the middle in all the formats */
 .error_return_options button:hover::before {
   width: 100%;
 }
+/* boddy of the hobby */
+.main-hobby {
+  position: static;
+  width: 50em;
+  height: 60em;
+  background-color: #154160;
+  margin-top: 10em;
+  margin-bottom: 10em;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+}
+/* for the hobbies text style */
+.hobbies-sources {
+  position: static;
+  text-align: left;
+  width: 90%;
+  height: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2em;
+  font-family: "Times New Roman", Times, serif;
+  color: #ffffff;
+  font-size: 18px;
+}
 
 /* ? -----------------------------------------------------------------------------------------------------------------*/
 /* 
