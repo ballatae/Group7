@@ -510,7 +510,7 @@ the content off the main page will be displayed */
 
 .main-ball {
   position: fixed;
-  top: 95px;
+  top: 75px;
   left: 15px;
   background-color: #154160;
   animation: ballmovement 15s infinite;
@@ -522,15 +522,15 @@ the content off the main page will be displayed */
     transform: translateX(0);
   }
   25% {
-    transform: translateY(4100%);
+    transform: translateY(3010%);
     background-color: #5b1f5b;
   }
   50% {
-    transform: translateX(9350%) translateY(4100%);
+    transform: translateX(7400%) translateY(3010%);
     background-color: #154160;
   }
   75% {
-    transform: translateX(9350%);
+    transform: translateX(7400%);
     background-color: #5b1f5b;
   }
   100% {
@@ -545,11 +545,11 @@ the content off the main page will be displayed */
       transform: translateX(0);
     }
     25% {
-      transform: translateY(3800%);
+      transform: translateY(3150%);
       background-color: #5b1f5b;
     }
     50% {
-      transform: translateX(2400%) translateY(3800%);
+      transform: translateX(2400%) translateY(3150%);
       background-color: #154160;
     }
     75% {
