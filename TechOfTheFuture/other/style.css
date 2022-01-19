@@ -1542,6 +1542,7 @@ so it will stay in the middle in all the formats */
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   grid-template-rows: repeat(3) minmax(600, 1fr);
+  color: #fff;
 }
 
 /* Style for the content in the accordion+panel grids */
@@ -1589,6 +1590,7 @@ so it will stay in the middle in all the formats */
   background: linear-gradient(to top right, #59809b 0%, #ff99cc 100%);
   display: none;
   overflow: hidden;
+  color: #fff;
 }
 
 /* Style for the content+image grids */
@@ -1631,6 +1633,7 @@ div.ai-contenttxt {
   text-align: justify;
   padding-right: 10%;
   font-family: nasalization, sans-serif;
+  color: #fff;
 }
 div.ai-bigcontainer .ai-imgonside {
   vertical-align: middle;
