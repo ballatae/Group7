@@ -545,11 +545,11 @@ the content off the main page will be displayed */
       transform: translateX(0);
     }
     25% {
-      transform: translateY(3150%);
+      transform: translateY(3000%);
       background-color: #5b1f5b;
     }
     50% {
-      transform: translateX(2400%) translateY(3150%);
+      transform: translateX(2400%) translateY(3000%);
       background-color: #154160;
     }
     75% {
